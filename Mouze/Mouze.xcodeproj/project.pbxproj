@@ -1,0 +1,253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		902645661417CDE20025C356 /* SpeedyMouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 902645651417CDE20025C356 /* SpeedyMouse.m */; };
+		907CD04E1417B5DB00818670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907CD04D1417B5DB00818670 /* Foundation.framework */; };
+		907CD0511417B5DB00818670 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907CD0501417B5DB00818670 /* main.m */; };
+		907CD05D1417B62500818670 /* Mouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 907CD05C1417B62500818670 /* Mouse.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		907CD0471417B5DB00818670 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9026455F1417C6EB0025C356 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		902645641417CDE20025C356 /* SpeedyMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedyMouse.h; sourceTree = "<group>"; };
+		902645651417CDE20025C356 /* SpeedyMouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedyMouse.m; sourceTree = "<group>"; };
+		907CD0491417B5DB00818670 /* Mouze */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mouze; sourceTree = BUILT_PRODUCTS_DIR; };
+		907CD04D1417B5DB00818670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		907CD0501417B5DB00818670 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		907CD0531417B5DB00818670 /* Mouze-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mouze-Prefix.pch"; sourceTree = "<group>"; };
+		907CD05B1417B62500818670 /* Mouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mouse.h; sourceTree = "<group>"; };
+		907CD05C1417B62500818670 /* Mouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mouse.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		907CD0461417B5DB00818670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907CD04E1417B5DB00818670 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		902645681417CEE90025C356 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				907CD05B1417B62500818670 /* Mouse.h */,
+				907CD05C1417B62500818670 /* Mouse.m */,
+				9026455F1417C6EB0025C356 /* Food.h */,
+				902645641417CDE20025C356 /* SpeedyMouse.h */,
+				902645651417CDE20025C356 /* SpeedyMouse.m */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		907CD03E1417B5DB00818670 = {
+			isa = PBXGroup;
+			children = (
+				907CD04F1417B5DB00818670 /* Mouze */,
+				907CD04C1417B5DB00818670 /* Frameworks */,
+				907CD04A1417B5DB00818670 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		907CD04A1417B5DB00818670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				907CD0491417B5DB00818670 /* Mouze */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		907CD04C1417B5DB00818670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				907CD04D1417B5DB00818670 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		907CD04F1417B5DB00818670 /* Mouze */ = {
+			isa = PBXGroup;
+			children = (
+				902645681417CEE90025C356 /* lib */,
+				907CD0501417B5DB00818670 /* main.m */,
+				907CD0521417B5DB00818670 /* Supporting Files */,
+			);
+			path = Mouze;
+			sourceTree = "<group>";
+		};
+		907CD0521417B5DB00818670 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				907CD0531417B5DB00818670 /* Mouze-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		907CD0481417B5DB00818670 /* Mouze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907CD0581417B5DB00818670 /* Build configuration list for PBXNativeTarget "Mouze" */;
+			buildPhases = (
+				907CD0451417B5DB00818670 /* Sources */,
+				907CD0461417B5DB00818670 /* Frameworks */,
+				907CD0471417B5DB00818670 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mouze;
+			productName = Mouze;
+			productReference = 907CD0491417B5DB00818670 /* Mouze */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		907CD0401417B5DB00818670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "shiawuen@gmail.com";
+			};
+			buildConfigurationList = 907CD0431417B5DB00818670 /* Build configuration list for PBXProject "Mouze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 907CD03E1417B5DB00818670;
+			productRefGroup = 907CD04A1417B5DB00818670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				907CD0481417B5DB00818670 /* Mouze */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		907CD0451417B5DB00818670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907CD0511417B5DB00818670 /* main.m in Sources */,
+				907CD05D1417B62500818670 /* Mouse.m in Sources */,
+				902645661417CDE20025C356 /* SpeedyMouse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		907CD0561417B5DB00818670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		907CD0571417B5DB00818670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		907CD0591417B5DB00818670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mouze/Mouze-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		907CD05A1417B5DB00818670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mouze/Mouze-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		907CD0431417B5DB00818670 /* Build configuration list for PBXProject "Mouze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907CD0561417B5DB00818670 /* Debug */,
+				907CD0571417B5DB00818670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		907CD0581417B5DB00818670 /* Build configuration list for PBXNativeTarget "Mouze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				907CD0591417B5DB00818670 /* Debug */,
+				907CD05A1417B5DB00818670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 907CD0401417B5DB00818670 /* Project object */;
+}
