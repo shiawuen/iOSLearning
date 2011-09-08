@@ -20,26 +20,26 @@ int main (int argc, const char * argv[])
     Mouse *mouse = [[Mouse alloc] initWithName:@"Micky"];
     SpeedyMouse *speedyMouse = [[SpeedyMouse alloc] initWithName:@"Speedy"];
 
-    [mouse Run];
-    [mouse Run];
-    [mouse Run];
+    [mouse run];
+    [mouse run];
+    [mouse run];
 
-    [mouse Eat:Cheese];
-    [mouse Eat:Cheese];
-    [mouse Eat:Cheese];
-    [mouse Eat:Cheese];
+    [mouse eat:Cheese];
+    [mouse eat:Cheese];
+    [mouse eat:Cheese];
+    [mouse eat:Cheese];
 
-    [mouse Eat:Garbage];
-    [mouse Eat:Garbage];
-    [mouse Eat:Garbage];
+    [mouse eat:Garbage];
+    [mouse eat:Garbage];
+    [mouse eat:Garbage];
 
-    [mouse Run];
-    [mouse Run];
+    [mouse run];
+    [mouse run];
 
-    [mouse Eat:Garbage];
+    [mouse eat:Garbage];
 
-    [speedyMouse Run];
-    [speedyMouse Kill];
+    [speedyMouse run];
+    [speedyMouse kill];
 
     [pool drain];
     return 0;

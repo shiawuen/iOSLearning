@@ -12,37 +12,29 @@
 @implementation Mouse
 
 @synthesize 
-    Name, 
-    Speed, 
-    Life, 
-    CheeseEaten
+    name, 
+    speed, 
+    life, 
+    cheeseEaten
 ;
 
 
 - (id)init
 {
-    self = [super init];
-
-    if (self) {
-
-        self.Life = 3;
-        self.Speed = 2.0;
-        self.CheeseEaten = 0;
-
-    }
-    
-    return self;
+    return [self initWithName:nil];
 }
 
-- (id) initWithName:(NSString *)name
+- (id) initWithName: (NSString *) nameGiven
 {
     self = [super init];
     
     if (self)
     {
 
-        [self init];
-        self.Name = name;
+        self.name  = [nameGiven copy];
+        self.life  = 3;
+        self.speed = 2.0;
+        self.cheeseEaten = 0;
 
     }
 
@@ -51,43 +43,43 @@
 
 
 
-- (void) Eat: (int) food
+- (void) eat: (int) foodEating
 {
-    if (food == Cheese)
+    if (foodEating == Cheese)
     {
-        CheeseEaten += 1;
+        self.cheeseEaten += 1;
         
-        NSLog(@"%@ eat a Cheese!", self.Name);
+        NSLog(@"%@ eat a Cheese!", self.name);
 
-        if (CheeseEaten >= 3)
+        if (self.cheeseEaten >= 3)
         {
-            Life += 1;
-            CheeseEaten = 0;
+            self.life += 1;
+            self.cheeseEaten = 0;
 
-            NSLog(@"%@ increased Life to %d", self.Name, self.Life);
+            NSLog(@"%@ increased Life to %d", self.name, self.life);
         }
 
     }
 
-    else if (food == Garbage)
+    else if (foodEating == Garbage)
     {
-        Life -= 1;
+        self.life -= 1;
 
-        NSLog(@"%@ life -1 to %d", self.Name, self.Life);
+        NSLog(@"%@ life -1 to %d", self.name, self.life);
         
-        if (Life == 0)
-            [self Kill];
+        if (self.life == 0)
+            [self kill];
     }
     
     
 }
 
-- (void) Run {
-    NSLog(@"%@ running", self.Name);
+- (void) run {
+    NSLog(@"%@ running", self.name);
 }
 
-- (void) Kill {
-    NSLog(@"%@ die", self.Name);
+- (void) kill {
+    NSLog(@"%@ die", self.name);
 }
 
 

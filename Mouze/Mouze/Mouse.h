@@ -12,22 +12,22 @@
 
 @interface Mouse : NSObject
 
-@property (nonatomic, assign)   NSString *  Name;
-@property (nonatomic, assign)   float       Speed;
-@property (nonatomic, assign)   int         Life;
-@property (nonatomic, assign)   int         CheeseEaten;
+@property (nonatomic, assign)   NSString *  name;
+@property (nonatomic, assign)   float       speed;
+@property (nonatomic, assign)   int         life;
+@property (nonatomic, assign)   int         cheeseEaten;
 
 
 - (id) initWithName:
-    (NSString *) name
+    (NSString *) nameGiven
 ;
 
 
-- (void) Eat:
-    (int) food
+- (void) eat:
+    (int) foodEating
 ;
-- (void) Run;
-- (void) Kill;
+- (void) run;
+- (void) kill;
 
 
 @end

@@ -16,7 +16,7 @@
 
     if (self)
     {
-        self.Speed = 4.0;
+        self.speed = 4.0;
     }
     
     return self;
@@ -25,7 +25,7 @@
 
 - (void) Run
 {
-    NSLog(@"%@ running very fast!", self.Name);
+    NSLog(@"%@ running very fast!", self.name);
 }
 
 @end
